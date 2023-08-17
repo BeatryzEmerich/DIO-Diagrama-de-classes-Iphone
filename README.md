@@ -1,2 +1,51 @@
-# DIO-Diagrama-de-classes-Iphone
- Um exercicio proposto em um curso da DIO, tendo o objetivo de criar um diagrama de classes de alguns funções do iphone para exercitar o conhecimento
+
+# Diagrama-de-classes-iphone-DIO
+Desenvolvimento de um diagrama de classe do iphone proposta pela DIO
+
+``` mermaid
+classDiagram
+    class MusicPlayer {
+        +play()
+        +pause()
+    }
+
+    class iPhoneMusicPlayer {
+        +play()
+        +pause()
+    }
+
+    class Phone {
+        +liga()
+        +desliga()
+        +correioDeVoz()
+    }
+
+    class iPhonePhone {
+        +liga()
+        +desliga()
+        +correioDeVoz()
+    }
+
+    class InternetBrowser {
+        +exibePagina()
+        +fechaPagina()
+        +addNovaPagina()
+        +atualizaPagina()
+    }
+
+    class iPhoneInternetBrowser {
+        +exibePagina()
+        +fechaPagina()
+        +addNovaPagina()
+        +atualizaPagina()
+    }
+
+    MusicPlayer <|-- iPhoneMusicPlayer
+    Phone <|-- iPhonePhone
+    InternetBrowser <|-- iPhoneInternetBrowser
+
+    interface MusicPlayer
+    interface Phone
+    interface InternetBrowser
+
+```
